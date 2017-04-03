@@ -1,12 +1,9 @@
-var numbers = [25,268,24,89,91,1,36,5,8]
-var i,j,temp
-for(i=0;i<numbers.length;i++){
-  for(j=0;j<numbers.length-1;j++){
-    if(numbers[j+1]<numbers[j]){
-      temp=numbers[j]
-      numbers[j]=numbers[j+1]
-      numbers[j+1]=temp
-    }
+var numbers = [21,34,11,3,53,2]
+var i
+var min = numbers[0]
+for(i=1;i<numbers.length;i++){
+    if(numbers[i]<min){
+      min = numbers[i]
   }
 }
-console.log(numbers)
+console.log(min)

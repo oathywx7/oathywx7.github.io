@@ -1,0 +1,22 @@
+ul,ol{
+  list-style: none;
+  justify-content: center;
+}
+
+.page{
+  display: flex;
+  padding: 1em 0;
+  justify-content: center;
+}
+
+.page > .editor{
+  margin-right: 2em;
+}
+
+.page > .preview{
+    width: 300px
+}
+
+.page > .preview p{
+  margin: 1em 0;
+}
