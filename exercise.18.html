@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id=code></div>
+  <style>
+    #code{
+      white-space: pre;
+      font-family: monospace;
+      font-size: 16px;
+      position: relative;
+      left: 400px;
+      top: 20px;
+    }
+  </style>
+  
+  <script>
+
+    
+    let final = `
+《刺客信条》  {
+    我的名字叫艾吉奥·奥迪托雷。 
+
+    当我还是个年轻人的时候， 
+    我拥有自由，却没看见它。 
+    我拥有时间，却不知道它。 
+    我拥有爱情，却没有感觉到它。 
+    若干年后，我才明白这些东西弥足珍贵。 
+
+    如今，垂暮之年的我。将这些顿悟视作一笔财富。 
+    爱、自由、时间……是它们教会了我… 
+    如何指引自己的信仰。 
+    尤其是爱，我至亲至爱的人们。 
+    无论是你我，还是我们的子孙，抑或是我们的兄弟姐妹， 
+    还有这个给予我们生命，广大、美妙的世界。 
+    还有令人捉摸不透的人生。 
+
+                   ————我挚爱的妻子 索菲亚
+}
+ ` 
+  let n = 0
+  
+  var id = setInterval(function(){
+    console.log(n)
+    if(n===final.length){
+      clearInterval(id)
+    }
+    n+=1
+    code.innerHTML = final.substring(0,n)
+
+  }, 40)
+    
+    
+  </script>
+</body>
+</html>
