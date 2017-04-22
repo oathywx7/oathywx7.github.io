@@ -1,0 +1,34 @@
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  min-height: 100vh;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#parent1{
+  background-image: url(http://img5q.duitang.com/uploads/item/201506/23/20150623203928_HzBWU.jpeg);
+  width: 100%;
+  padding: 80px;
+  perspective: 1000px;
+}
+
+#banner1{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+
+}
+
+#time{
+  font-size: 20vh;
+  text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #444;  
+}
