@@ -29,11 +29,6 @@
 
 }
 
-.disc-container .icon{
-    position: absolute;
-    z-index: 3;
-    padding: 10px;
-}
 
 .disc-container .pointer{
     width: 24vw;
