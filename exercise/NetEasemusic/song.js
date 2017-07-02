@@ -1,20 +1,4 @@
 $(function(){
-
-    let id = parseInt(location.search.match(/\bid=([^&]*)/)[1],10)
-
-    $.get('./songs.json').then(function(response){
-        let songs = response
-        let song = songs.filter(s=>s.id === id)[0]
-        let {url} = song
-
-        let audio = document.createElement('audio')
-            audio.src = url
-            audio.oncanplay = function(){
-        audio.play()
-        $('.disc-container').addClass('playing')
-    }
-})
-    })
     
     $.get('/lyric.json').then(function(object){
         
@@ -42,3 +26,10 @@ $(function(){
     })
     
 
+    let audio = document.createElement('audio')
+    audio.src = 'http://dl.stream.qqmusic.qq.com/C400000FR5GV0lwW18.m4a?vkey=E734E61C0EACD7465A6D4E679C1B7209C1C678A8624BA014D79FB4A3BDA2490E86BAC63A6B6B8D6DEFE449963FCEF8EE160FBBBC575C58D0&guid=4884137539&uin=0&fromtag=66'
+    audio.oncanplay = function(){
+        audio.play()
+        $('.disc-container').addClass('playing')
+    }
+})
